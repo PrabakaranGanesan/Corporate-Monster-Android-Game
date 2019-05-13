@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cmonster"
+    tools:context=".GameOverActivity">
+
+    <TextView
+        android:id="@+id/gameover"
+        android:layout_width="125dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="151dp"
+        android:text="Game Over"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/displayscore"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="212dp"
+        android:text="Score"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="30dp"
+        android:textStyle="italic|bold" />
+
+
+    <Button
+        android:id="@+id/play_again_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="162dp"
+        android:background="#fac791"
+        android:text="play again"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/winbtn"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="227dp"
+        android:background="#fac791"
+        android:text="Win RS.500/-"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9096560946069188/2360679466">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
